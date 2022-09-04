@@ -1,0 +1,8 @@
+baseURL = 'http://localhost:1313/'
+
+languageCode = 'en-us'
+
+title = 'Hugo Multiverse tuned'
+theme = "hugo-multiverse-tuned"
+
+timeout = "240s"

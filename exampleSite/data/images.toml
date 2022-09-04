@@ -1,0 +1,12 @@
+[[images]]
+  title = "Diam tempus accumsan"
+  caption = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  imagePathFull = "img/pic1.jpg"
+  imagePathThumb = "img/pic1_thumb.jpg"
+
+[[images]]
+  title = "Diam tempus accumsan"
+  caption = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  imagePathFull = "img/pic2.jpg"
+  imagePathThumb = "img/pic2_thumb.jpg"
+  

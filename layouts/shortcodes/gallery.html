@@ -1,0 +1,9 @@
+{{ $image := (.Page.Resources.ByType "image") }}
+{{ with $image }}
+    {{ range . }}
+    {{ $resized := .Fill "800x600 q20" }}
+    <article class="thumb">
+        <a href="{{ .Permalink }}" title="Das ist der Titel" class="image"><img  src="{{ $resized.Permalink }}" loading="lazy" alt="" /></a>
+    </article>
+    {{ end }}
+{{ end }}

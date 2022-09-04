@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<!--
+	Multiverse by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Untitled</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/css/main.css" />
+		<noscript><link rel="stylesheet" href="/css/noscript.css" /></noscript>
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				{{ partial "header.html" . }}
+
+				<!-- Main -->
+					<div id="main">
+
+
+						{{ range $.Site.Data.images.images }}
+						{{ partial "thumbnail" . }}
+						{{ end }}
+						
+
+						{{- block "main" . }}{{- end }}
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer" class="panel">
+						<div class="inner split">
+							<div>
+								{{ partial "followme.html" . }}
+							</div>
+							
+							
+							<div>
+								{{ partial "contact.html" . }}
+							</div>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/jquery.poptrox.min.js"></script>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+		 
+		<script src="/js/browser.min.js"></script>
+		<script src="/js/breakpoints.min.js"></script>
+		<script src="/js/util.js"></script>
+		<script src="/js/main.js"></script>
+		<script type="text/javascript">
+			 $(function() {
+   			     $('.lazy').Lazy();
+    			});
+		</script>
+
+	</body>
+</html>
